@@ -1,7 +1,9 @@
 import React from "react";
-
 const Manager = () => {
-  return (
+  const showPassword = () =>{
+    alert("show Password");
+  }
+    return (
     <>
       <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
         <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-green-400 opacity-20 blur-[100px]"></div>
@@ -23,6 +25,7 @@ const Manager = () => {
             type="text"
             name=""
             id=""
+            placeholder="Enter URL"
           />
           <div className=" w-full flex gap-8 justify-between">
             <input
@@ -30,15 +33,21 @@ const Manager = () => {
               type="text"
               name=""
               id=""
+              placeholder="Enter UserName"
             />
+            <div className="relative px-2">
+
             <input
               className="rounded-full border border-green-500 w-full bg-clip p-4 py-1"
               type="text"
               name=""
               id=""
+              placeholder="Enter Password"
             />
+            <span className="absolute right-0 cursor-pointer " onClick={showPassword}><img className="mt-1.5 mr-4" width={20} height={25} src="/icons/eye.png" alt="" /></span>
+            </div>
           </div>
-          <button className=" flex justify-center items-center rounded-full w-fit py-1 px-4 text-black text-l font-semibold bg-green-500">
+          <button className=" flex justify-center items-center border border-green-900 rounded-full w-fit py-1 px-4 text-black text-l font-semibold bg-green-500">
             <lord-icon
               src="https://cdn.lordicon.com/jgnvfzqg.json"
               trigger="hover"
