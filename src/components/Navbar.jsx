@@ -19,6 +19,9 @@ const Navbar = () => {
                 <a href="" className='hover:font-bold'>Contact us</a>
             </li>
         </ul>
+        <button className='text-white bg-slate-800 h-14' onClick={()=>{window.open("https://github.com/Vidit0018")}}>
+          <img src="\icons\github.png" alt="github" className=' p-5   w-16'  />
+        </button>
         </div>
       
     </nav>
