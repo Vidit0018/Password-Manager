@@ -229,8 +229,8 @@ const Manager = () => {
                 {passwordArray.map((item) => {
                   return (
                     <tr key={item.site}>
-                      <td className="text-center  py-2 border border-white  h-inherit overflow-hidden ">
-                        <div className="flex text-lg justify-center items-center">
+                      <td className="text-center  py-2 border border-white overflow-hidden max-w-[15vw]    ">
+                        <div className=" flex-col   lg:flex lg:flex-row text-lg justify-center items-center">
                           <span>
                             {" "}
                             <a href={item.site} target="_blank">
@@ -248,8 +248,8 @@ const Manager = () => {
                         </div>
                       </td>
 
-                      <td className="text-center  py-2 border border-white overflow-hidden">
-                        <div className="flex text-lg justify-center items-center">
+                      <td className="text-center  py-2 border border-white overflow-hidden  max-w-[15vw] ">
+                        <div className="flex-col lg:flex lg:flex-row text-lg justify-center items-center">
                           <span>{item.username} </span>
                           <img
                             className="cursor-pointer ml-4 size-4"
@@ -262,8 +262,8 @@ const Manager = () => {
                         </div>
                       </td>
 
-                      <td className="text-center   py-2 border border-white overflow-hidden">
-                        <div className="flex text-lg justify-center items-center">
+                      <td className="text-center   py-2 border border-white overflow-hidden max-w-[15vw] ">
+                        <div className="flex-col lg:flex lg:flex-row text-lg justify-center items-center">
                           <span>{item.password}</span>
 
                           <img
@@ -277,7 +277,7 @@ const Manager = () => {
                         </div>
                       </td>
 
-                      <td className="text-center  py-2 border border-white overflow-hidden">
+                      <td className="text-center  py-2 border border-white overflow-hidden max-w-[15vw] ">
                         <span
                           className="mx-2 cursor-pointer"
                           onClick={() => deletePassword(item.id)}
